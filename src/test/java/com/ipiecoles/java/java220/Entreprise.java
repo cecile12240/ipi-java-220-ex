@@ -11,7 +11,7 @@ public class Entreprise {
     public static final Double PRIME_ANCIENNETE = 100d;
 
     public static Double primeAnnuelleBase(){
-           return LocalDate.now().getYear() * 0.5;// pour l'année en cours 
+           return LocalDate.now().getYear() * 0.5;// pour l'année en cours /2d, /2.0 fonctionnent aussi le d annonce que je souhaite aussi les chiffres après la virgule.
     }
 }
 
