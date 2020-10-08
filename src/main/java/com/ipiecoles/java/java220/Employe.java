@@ -55,15 +55,25 @@ public class Employe {
     public void setSalaire(Double salaire) {
         this.salaire = salaire;
     }
-    public final Integer gteNombreAnneeAnciennete(){
-        return LocalDate.now().getYear() - dateEmbauche.getYear();
 
-    }
-    public void setDateEmbauche(){
+
+    /** public void setDateEmbauche(){
         // vérifie que la date d'embauche est valide, qu'elle n'est pas égale à null et qu'elle n'est pas ultérieure à la date du jour
         if(dateEmbauche != null && dateEmbauche.isAfter(LocalDate.now())){
             throw new Exception("La date d'embauche ne peut pas être supérieure à la date courante");
         }
         this.dateEmbauche = dateEmbauche;
+    }*/
+    public void augmenterSalaire(Double pourcentage){
+        this.salaire = this.salaire * (1 + pourcentage);
+    }
+    public Double getPrimeAnnuelle(){
+        return Entreprise.primeAnnuelleBase();
+    }
+    public final Integer gteNombreAnneeAnciennete(){
+        return LocalDate.now().getYear() - dateEmbauche.getYear();
+    }
+    public Integer getNbConges(){
+        return Entreprise.NB_CONGES_BASE;
     }
 }

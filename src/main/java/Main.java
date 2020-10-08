@@ -1,10 +1,12 @@
+import java.time.LocalDate;
+
 /** classe de tests */
 
 public class Main {
-    public static void main(String[] args)
+    public static void main()
     {
-        String chainenoninitialise;
-        System.out.println("Hello World");// sortie écran
+      //Employe employe = new Employe ();
+       // System.out.println("Hello World");// sortie écran
     }
 }
 
