@@ -59,7 +59,12 @@ public class Commercial extends Employe {
 
     }
 
-    @Override
+	@Override
+	protected void setGrade(Integer grade) {
+
+	}
+
+	@Override
     public String toString() {
         return "Commercial{" +
                 "caAnnuel=" + caAnnuel +
@@ -78,10 +83,10 @@ public class Commercial extends Employe {
                 return Note.BIEN;
             case 200:
                 return Note.TRES_BIEN;
-            default:
-                return null;
+			default:
+				return null;
 		}
-    	
+
 	}
-    
+
 }

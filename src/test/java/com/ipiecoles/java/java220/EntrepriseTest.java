@@ -129,6 +129,11 @@ public class EntrepriseTest {
 			return 0d;
 		}
 
+		@Override
+		protected void setGrade(Integer grade) {
+
+		}
+
 	}
 
 	@Test
