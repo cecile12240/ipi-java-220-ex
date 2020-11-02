@@ -66,5 +66,9 @@ public class Commercial extends Employe {
                 ", performance=" + performance +
                 "} " + super.toString();
     }
+
+    public equivalenceNote(){
+    	
+	}
     
 }
